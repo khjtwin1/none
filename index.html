@@ -27,7 +27,13 @@
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             margin-bottom: 1.5rem;
         }
-        h1 { font-size: 2.25rem; line-height: 2.5rem; color: #2A62B6; font-weight: 700; } /* text-4xl, Primary Blue, bold */
+        /* Updated H1 style for bigger size and bolder weight */
+        h1 { 
+            font-size: 2.5rem; /* ~text-4xl */
+            line-height: 1.2; 
+            color: #2A62B6; 
+            font-weight: 800; /* extrabold */
+        }
         h2 { 
             font-size: 1.875rem; line-height: 2.25rem; /* text-3xl */
             color: #2A62B6; /* Primary Blue */ 
@@ -49,9 +55,9 @@
             margin-bottom: 0.75rem;
         }
 
-        /* Tailwind Customizations for headings if needed via @apply, but here direct CSS */
+        /* Updated media query for H1 on larger screens */
         @media (min-width: 768px) { /* md breakpoint */
-            h1 { font-size: 2.25rem; line-height: 2.5rem; } /* text-4xl */
+            h1 { font-size: 3rem; } /* text-5xl on md screens */
         }
 
         .report-citation {
@@ -168,8 +174,8 @@
                             <div class="flex flex-col items-center text-center md:flex-row md:text-left md:items-start gap-4">
                                 <img src="src/이서현.png" 
                                      alt="이서현 학생 프로필 사진" 
-                                     class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-white flex-shrink-0"
-                                     onerror="this.onerror=null;this.src='src/이서현.png';">
+                                     class="w-28 h-28 rounded-full object-cover shadow-md border-2 border-white flex-shrink-0"
+                                     onerror="this.onerror=null;this.src='https://placehold.co/112x112/E0F2FE/2A62B6?text=이서현';">
                                 <div>
                                     <h4 class="text-lg text-teal-700">가. 인터뷰 1 요약 : 이서현 학생</h4>
                                     <p class="text-sm text-gray-700 text-justify mt-2">이서현 학생은 생성형 AI 사용 빈도가 적으며, 주로 사이버 펑크와 같은 특정 주제에 대해 질문하거나 숙제 중 모르는 것을 물어보는 데 사용한다고 답변했다. 이는 이서현 학생이 생성형 AI의 필요성을 크게 인지하지 못하며, 학습 도구보다는 단순 챗봇이나 검색 도구로 사용하는 경향을 보여준다.</p>
@@ -180,8 +186,8 @@
                              <div class="flex flex-col items-center text-center md:flex-row md:text-left md:items-start gap-4">
                                 <img src="src/노윤서.png" 
                                      alt="노윤서 학생 프로필 사진" 
-                                     class="w-24 h-24 rounded-full object-cover shadow-md border-2 border-white flex-shrink-0"
-                                     onerror="this.onerror=null;this.src='src/노윤서.png';">
+                                     class="w-28 h-28 rounded-full object-cover shadow-md border-2 border-white flex-shrink-0"
+                                     onerror="this.onerror=null;this.src='https://placehold.co/112x112/E0F2FE/2A62B6?text=노윤서';">
                                 <div>
                                     <h4 class="text-lg text-teal-700">나. 인터뷰 2 요약 : 노윤서 학생</h4>
                                     <p class="text-sm text-gray-700 text-justify mt-2">노윤서 학생은 생성형 AI를 활용하여 코드 디버깅, 오류 해결 등을 수행하며 AI를 적극적으로 사용하고 있다. 특히 AI를 학업에 적극적으로 활용하며, 전공 문제 해결과 학습 시간대(저녁)에 맞춘 루틴을 보여주었다. 이는 이서현 학생과 비교할 때 생성형 AI를 더욱 적극적으로 사용하며 학업 및 전공 문제 해결에 도움을 받고 있음을 드러낸다.</p>
@@ -197,7 +203,7 @@
                         <img src="src/워드클라우드.png" 
                              alt="인터뷰 결과 워드 클라우드 이미지" 
                              class="mx-auto rounded-lg shadow-md max-w-full h-auto"
-                             onerror="this.onerror=null;this.src='src/워드클라우드.png';">
+                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/CCCCCC/FFFFFF?text=Image+Not+Found';">
                         <p class="text-xs text-gray-500 mt-2">위 워드 클라우드는 인터뷰 내용을 분석한 결과로, '학습', '전공', '코드', '해결' 등의 키워드가 두드러지게 나타났다. <br>이는 학생들이 AI를 주로 학업 관련 문제 해결에 활용하고 있음을 보여준다.</p>
                     </div>
 
@@ -234,6 +240,22 @@
                     </p>
                 </article>
             </section>
+            
+            <!-- 5. 참고자료 -->
+            <section id="references" class="mb-10 info-card">
+                <h2 class="text-2xl">V. 참고자료</h2>
+                <div class="text-gray-700 leading-relaxed">
+                    <ul class="list-disc list-inside space-y-3">
+                        <li>
+                            <a href="https://aimatters.co.kr/news-report/ai-report/3035/" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800 transition-colors">“AI야, 숙제 좀 도와줘” 청소년 절반이 AI로 과제 해결 중 - AI매터스</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kosac.re.kr/menus/248/boards/459/posts/40554?brdType=R&thisPage=1&bbIdx=40368&brdCodeValue=&searchField=title&searchText=&page=1" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800 transition-colors">청소년의 AI 활용, 학습 도구로 자리 잡아 - 한국과학창의재단</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
 
             <!-- 6. 푸터 -->
             <footer class="text-center pt-10 pb-6 border-t border-gray-300">
